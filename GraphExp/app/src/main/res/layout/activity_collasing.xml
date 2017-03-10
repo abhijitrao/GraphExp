@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/cola1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        app:expandedTitleMarginStart="75dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_collapseMode="parallax"
+            android:scaleType="centerCrop"
+            android:src="@drawable/charts_graphs"/>
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/data"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>
